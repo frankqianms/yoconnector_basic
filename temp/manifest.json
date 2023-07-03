@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "75e761c0-1945-11ee-9f62-e397428f5c6f",
+  "version": "0.0.1",
+  "packageName": "yoconnectorbasic",
+  "developer": {
+    "name": "frankqianms",
+    "websiteUrl": "https://02ee-2404-f801-9000-1a-e1da-38ed-5e9f-7fda.ngrok-free.app",
+    "privacyUrl": "https://02ee-2404-f801-9000-1a-e1da-38ed-5e9f-7fda.ngrok-free.app/privacy.html",
+    "termsOfUseUrl": "https://02ee-2404-f801-9000-1a-e1da-38ed-5e9f-7fda.ngrok-free.app/tou.html"
+  },
+  "name": {
+    "short": "yoconnector_basic",
+    "full": "yoconnector_basic"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [
+    {
+      "connectorId": "3f89b74d-87a0-4b9e-9f42-91287de1fe82",
+      "configurationUrl": "https://02ee-2404-f801-9000-1a-e1da-38ed-5e9f-7fda.ngrok-free.app/yoconnectorBasicConnector/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "02ee-2404-f801-9000-1a-e1da-38ed-5e9f-7fda.ngrok-free.app"
+  ],
+  "showLoadingIndicator": false
+}

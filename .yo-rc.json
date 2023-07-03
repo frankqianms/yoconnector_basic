@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "frankqianms"
+    },
+    "libraryName": "yoconnectorBasic",
+    "generator-version": "4.1.0"
+  }
+}
