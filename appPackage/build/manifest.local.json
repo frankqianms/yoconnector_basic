@@ -1,0 +1,47 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "157ffe8b-7f81-4b9d-8fcf-c46700ef8a16",
+    "version": "{{VERSION}}",
+    "packageName": "{{PACKAGE_NAME}}",
+    "developer": {
+        "name": "frankqianms",
+        "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+        "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+        "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
+    },
+    "name": {
+        "short": "yoconnector_basic",
+        "full": "yoconnector_basic"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [
+        {
+            "connectorId": "{{CONNECTOR_ID}}",
+            "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/yoconnectorBasicConnector/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+            "scopes": [
+                "team"
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{{PUBLIC_HOSTNAME}}"
+    ],
+    "showLoadingIndicator": false
+}

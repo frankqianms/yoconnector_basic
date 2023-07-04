@@ -1,14 +1,14 @@
 {
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
   "manifestVersion": "1.13",
-  "id": "75e761c0-1945-11ee-9f62-e397428f5c6f",
-  "version": "0.0.1",
-  "packageName": "yoconnectorbasic",
+  "id": "${{APPLICATION_ID}}",
+  "version": "1.0.0",
+  "packageName": "{{PACKAGE_NAME}}",
   "developer": {
     "name": "frankqianms",
-    "websiteUrl": "https://24d2-2404-f801-9000-1a-15b6-d4e1-1c5b-439a.ngrok-free.app",
-    "privacyUrl": "https://24d2-2404-f801-9000-1a-15b6-d4e1-1c5b-439a.ngrok-free.app/privacy.html",
-    "termsOfUseUrl": "https://24d2-2404-f801-9000-1a-15b6-d4e1-1c5b-439a.ngrok-free.app/tou.html"
+    "websiteUrl": "https://${{PUBLIC_HOSTNAME}}",
+    "privacyUrl": "https://${{PUBLIC_HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://${{PUBLIC_HOSTNAME}}/tou.html"
   },
   "name": {
     "short": "yoconnector_basic",
@@ -28,8 +28,8 @@
   "bots": [],
   "connectors": [
     {
-      "connectorId": "3f89b74d-87a0-4b9e-9f42-91287de1fe82",
-      "configurationUrl": "https://24d2-2404-f801-9000-1a-15b6-d4e1-1c5b-439a.ngrok-free.app/yoconnectorBasicConnector/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "connectorId": "${{CONNECTOR_ID}}",
+      "configurationUrl": "https://${{PUBLIC_HOSTNAME}}/yoconnectorBasicConnector/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
       "scopes": [
         "team"
       ]
@@ -41,7 +41,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "24d2-2404-f801-9000-1a-15b6-d4e1-1c5b-439a.ngrok-free.app"
+    "${{PUBLIC_HOSTNAME}}"
   ],
   "showLoadingIndicator": false
 }
